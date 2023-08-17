@@ -1,12 +1,14 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
 
-function Card() {
+import React from 'react';
+
+function Card({ name, description }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+    <div className="card">
+      <h2>{name}</h2>
+      <p>{description}</p>
     </div>
   );
 }
 
 export default Card;
+
